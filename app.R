@@ -123,32 +123,8 @@ packaging for product orders; provided detailed follow-through and after sales s
                        )
                 )
               )
-            ),
-            fluidRow(
-              box(
-                title = "Course Work", solidHeader = TRUE,
-                status="primary", width=12, collapsible = FALSE,
-                column(12, 
-                       tags$div(
-                         
-                         tags$span(   
-                           
-                           h3("Mathematical Modeling in R :"),
-                           h4(tags$li(tags$a(href="http://rpubs.com/fung10_91/data609projectcode", "Mathematical Modeling for Portfolio Optimization"))),
-                           h3("Data mining report:"),
-                           h4(tags$li(tags$a(href="https://github.com/fung1091/data621/blob/master/finalproject/data621final.pdf", "Data mining and modeling"))),
-                           h3("Nasdaq Prediction by Naive Bayses Classifier and Network Analysis in Ipython:"),
-                           h4(tags$li(tags$a(href="https://github.com/fung1091/data620/blob/master/finalproject/miniproject.ipynb", "Nasdaq Prediction"))),
-                           h3("Financial data scraping, cleaning, visualization and News sentiment Analysis in R:"),
-                           h4(tags$li(tags$a(href="http://rpubs.com/fung10_91/DATA607finalproject", "Financial data and news sentiment"))),
-                           h3("Machine learning for Finance in Ipython:"),
-                           h4(tags$li(tags$a(href="https://github.com/programminggroup/datafinalproject/blob/master/linear_regression.ipynb", "Financial machine learning"))),
-                           br()
-                         )
-                       )
-                )
-              )
             )
+            
         
             
     ),
