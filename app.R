@@ -31,21 +31,32 @@ sidebar <- dashboardSidebar(
     menuItem("Resume in PDF", tabName = "resume_pdf", icon = icon("fa fa-compass")),
     menuItem(h4(tags$strong(style="color:green"," Work Sample :"))),
     
-    menuItem("1. Machine learning by Python", icon = icon("fa fa-compass")),
+    menuItem(tags$strong("1. Machine learning in S&P500", icon = icon("fa fa-compass"))),
       menuSubItem("Introduction", tabName = "workSample1"),
       menuSubItem("Experiment & Result", tabName = "workSample2"),
       menuSubItem("Coding in Python", tabName = "ML1_jupyter"),
       menuSubItem("Analysis Report in PDF", tabName = "ML1_pdf"),
     
-    menuItem("2. R shiny Dashboard", icon = icon("bar-chart-o"),
+    menuItem(tags$strong("2. R shiny Dashboard", icon = icon("bar-chart-o"))),
       menuSubItem("Introduction", tabName = "myTabForIntroduction"),
       menuSubItem("Scatter Plot", tabName = "myTabForScatterPlot"),
       menuSubItem("Data Explorer", tabName = "myTabForDataTable"),
-      menuSubItem("Comparison Job Title", tabName = "myTabForGvisMap")),
+      menuSubItem("Comparison Job Title", tabName = "myTabForGvisMap"),
+      menuSubItem("Coding", tabName = "rcoding"),
    
-    menuItem("3. Reference Info", tabName = "myTabForExternalInfo", icon = icon("fa fa-compass")),
+    menuItem(tags$strong("3. Other samples", icon = icon("bar-chart-o"))),
+      menuSubItem("3.1 Mathematical Modeling in R", tabName = "MMT"),
+      menuSubItem("3.2 Data mining in R", tabName = "DMR"),
+      menuSubItem("3.3 Sentiment Analysis", tabName = "SAP"),
+      menuSubItem("3.4 Machine learning", tabName = "MLF"),
+      menuSubItem("3.5 Financial analysis in R", tabName = "SCV"),
+    
+    #menuItem("Reference Info", tabName = "myTabForExternalInfo", icon = icon("fa fa-compass")),
     tags$br(),
-    menuItem(h5(tags$strong(style="color:green","This site is made by R Shiny")))
+    menuItem(h5(tags$strong(style="color:green","This site is made by R Shiny")),
+      menuSubItem("Site Code in R", tabName = "site_code")),
+    tags$br(),
+    tags$br()
   )
 ) 
 
@@ -457,6 +468,154 @@ packaging for product orders; provided detailed follow-through and after sales s
                          
                          tags$iframe(style="height:600px; width:100%; scrolling=yes", 
                                      src="https://rawcdn.githack.com/fung1091/profile/master/TzeFung_Jim_resume.pdf")),
+                       
+                       tags$br()
+                )
+              )
+            )
+            
+            
+    ),
+    
+    tabItem("site_code",
+            fluidRow(
+              box(
+                title = "R shiny code for Resume:", solidHeader = TRUE,
+                status="success", width=12, collapsible = FALSE,
+                column(12, 
+                       tags$div(
+                         h3("Here are the links to :"),
+                         h4(tags$li(tags$a(href="https://nbviewer.jupyter.org/github/fung1091/profile/blob/master/app.R", "R code for Resume"))),
+                         
+                         tags$iframe(style="height:600px; width:100%; scrolling=yes", 
+                                     src="https://nbviewer.jupyter.org/github/fung1091/profile/blob/master/app.R")),
+                       
+                       tags$br()
+                )
+              )
+            )
+            
+            
+    ),
+    
+    tabItem("rcoding",
+            fluidRow(
+              box(
+                title = "R shiny code for Dashboard:", solidHeader = TRUE,
+                status="success", width=12, collapsible = FALSE,
+                column(12, 
+                       tags$div(
+                         h3("Here are the links to :"),
+                         h4(tags$li(tags$a(href="https://nbviewer.jupyter.org/github/fung1091/data608/blob/master/Final%20Project/app.R", "R shiny code for Dashboard"))),
+                         
+                         tags$iframe(style="height:600px; width:100%; scrolling=yes", 
+                                     src="https://nbviewer.jupyter.org/github/fung1091/data608/blob/master/Final%20Project/app.R")),
+                       
+                       tags$br()
+                )
+              )
+            )
+            
+            
+    ),
+    
+    tabItem("MMT",
+            fluidRow(
+              box(
+                title = "Mathematical Modeling Techniques for Data Analytics:", solidHeader = TRUE,
+                status="success", width=12, collapsible = FALSE,
+                column(12, 
+                       tags$div(
+                         h3("Here are the links to :"),
+                         h4(tags$li(tags$a(href="http://rpubs.com/fung10_91/data609projectcode", "R code in Rpubs"))),
+                         
+                         tags$iframe(style="height:600px; width:100%; scrolling=yes", 
+                                     src="https://rawcdn.githack.com/fung1091/data609/master/project/data609project.pdf")),
+                       
+                       tags$br()
+                )
+              )
+            )
+            
+            
+    ),
+    
+    tabItem("DMR",
+            fluidRow(
+              box(
+                title = "Data Mining and Modeling for Data Analytics:", solidHeader = TRUE,
+                status="success", width=12, collapsible = FALSE,
+                column(12, 
+                       tags$div(
+                         h3("Here are the links to :"),
+                         h4(tags$li(tags$a(href="https://nbviewer.jupyter.org/github/fung1091/data621/blob/master/finalproject/data621final.Rmd", "R code"))),
+                         
+                         tags$iframe(style="height:600px; width:100%; scrolling=yes", 
+                                     src="https://rawcdn.githack.com/fung1091/data621/master/finalproject/data621final.pdf")),
+                       
+                       tags$br()
+                )
+              )
+            )
+            
+            
+    ),
+    
+    tabItem("SAP",
+            fluidRow(
+              box(
+                title = "Nasdaq Prediction by Naive Bayses Classifier and Network Analysis in Python:", solidHeader = TRUE,
+                status="success", width=12, collapsible = FALSE,
+                column(12, 
+                       tags$div(
+                         h3("Here are the links to :"),
+                         h4(tags$li(tags$a(href="https://nbviewer.jupyter.org/github/fung1091/Data620/blob/master/finalproject/miniproject.ipynb", "Report in Jupyter - Python"))),
+                         
+                         tags$iframe(style="height:600px; width:100%; scrolling=yes", 
+                                     src="https://nbviewer.jupyter.org/github/fung1091/Data620/blob/master/finalproject/miniproject.ipynb")),
+                       
+                       tags$br()
+                )
+              )
+            )
+            
+            
+    ),
+    
+    tabItem("SCV",
+            fluidRow(
+              box(
+                title = "Financial data scraping, cleaning, visualization and News sentiment Analysis in R", solidHeader = TRUE,
+                status="success", width=12, collapsible = FALSE,
+                column(12, 
+                       tags$div(
+                         h3("Here are the links to :"),
+                         h4(tags$li(tags$a(href="http://rpubs.com/fung10_91/DATA607finalproject", "R code in Rpubs")))
+                         
+                         #tags$iframe(style="height:600px; width:100%; scrolling=yes", 
+                         #            src="https://nbviewer.jupyter.org/github/fung1091/Data620/blob/master/finalproject/miniproject.ipynb")
+                         ),
+                       
+                       tags$br()
+                )
+              )
+            )
+            
+            
+    ),
+    
+    tabItem("MLF",
+            fluidRow(
+              box(
+                title = "Machine learning for Finance in Jupyter - Python:", solidHeader = TRUE,
+                status="success", width=12, collapsible = FALSE,
+                column(12, 
+                       tags$div(
+                         h3("Here are the links to :"),
+                         h4(tags$li(tags$a(href="https://nbviewer.jupyter.org/github/programminggroup/datafinalproject/blob/master/linear_regression.ipynb", "Report in Jupyter - Python"))),
+                         
+                         tags$iframe(style="height:600px; width:100%; scrolling=yes", 
+                                     src="https://nbviewer.jupyter.org/github/programminggroup/datafinalproject/blob/master/linear_regression.ipynb")),
                        
                        tags$br()
                 )
