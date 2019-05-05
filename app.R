@@ -105,18 +105,18 @@ Mathematics and statistics programming.")),
                            tags$br(),
                             
                            h4(tags$strong(style="color:blue","Experience :")),
-                           h5(tags$strong("Intern - Kasisto, New York, NY (Jan. 2019 - Apr. 2019)")),
-                           h5(tags$li("Be responsible for the data sourcing pipeline and improve the natural language in chatbot")),
-                           h5(tags$li("Develop and support of a wide range of data transformations and migrations")),
-                           h5(tags$li("Construct custom ETL processes ")),
+                           h4(tags$strong("Intern - Kasisto, New York, NY (Jan. 2019 - Apr. 2019)")),
+                           h4(tags$li("Be responsible for the data sourcing pipeline and improve the natural language in chatbot")),
+                           h4(tags$li("Develop and support of a wide range of data transformations and migrations")),
+                           h4(tags$li("Construct custom ETL processes ")),
                            
-                           h5(tags$strong("Freelance Data Analyst - Various clients (Jul. 2018 - Dec. 2018)")),
-                           h5(tags$li("Provided complex and intensive data analysis related to data scraping, visualization, mining, and Excel formation and Pivot
+                           h4(tags$strong("Freelance Data Analyst - Various clients (Jul. 2018 - Dec. 2018)")),
+                           h4(tags$li("Provided complex and intensive data analysis related to data scraping, visualization, mining, and Excel formation and Pivot
 table")),
-                           h5(tags$strong("Co-Founder - Newinsock.com, New York, NY (Jan. 2017 - Jun. 2018)")),
-                           h5(tags$li("Conducted sourcing for products to ensure constant and timely supply of inventory; coordinated shipping and professional
+                           h4(tags$strong("Co-Founder - Newinsock.com, New York, NY (Jan. 2017 - Jun. 2018)")),
+                           h4(tags$li("Conducted sourcing for products to ensure constant and timely supply of inventory; coordinated shipping and professional
 packaging for product orders; provided detailed follow-through and after sales service for customer satisfaction")),
-                           h5(tags$li("Designed comprehensive web pages for business using Wordpress and SEO setting")),
+                           h4(tags$li("Designed comprehensive web pages for business using Wordpress and SEO setting")),
                            
                            br()
                          )
@@ -609,11 +609,11 @@ packaging for product orders; provided detailed follow-through and after sales s
                 status="primary", width=12, collapsible = FALSE,
                 column(12, 
                        tags$div(
-                         h3(tags$strong(style="color:blue","Analysis Report Link :")),
-                         h4(tags$li(tags$strong(tags$a(href="https://rawcdn.githack.com/fung1091/Data698/master/final/finalreport1.html", "Report in HTML"))),
-                         h4(tags$li(tags$strong(tags$a(href="https://nbviewer.jupyter.org/github/fung1091/Data698/blob/master/final/finalreport.ipynb", "Report with Coding in Jupyter - Python")))),
-                         h4(tags$li(tags$strong(tags$a(href="https://rawcdn.githack.com/fung1091/Data698/master/final/finalreport_final.pdf", "PDF report"))),
-                         tags$br(),
+                         #h3(tags$strong(style="color:blue","Analysis Report Link :")),
+                         #h4(tags$li(tags$strong(tags$a(href="https://rawcdn.githack.com/fung1091/Data698/master/final/finalreport1.html", "Report in HTML"))),
+                         #h4(tags$li(tags$strong(tags$a(href="https://nbviewer.jupyter.org/github/fung1091/Data698/blob/master/final/finalreport.ipynb", "Report with Coding in Jupyter - Python")))),
+                         #h4(tags$li(tags$strong(tags$a(href="https://rawcdn.githack.com/fung1091/Data698/master/final/finalreport_final.pdf", "PDF report"))),
+                         #tags$br(),
                          
                          h3(tags$strong(style="color:blue","Description :")),
                          h4("We are looking at the S&P 500, an index of the largest US companies. The S&P 500 is an American stock market index based on the market capitalization of 500 large companies having common stock listed on the NYSE, NASDAQ Exchange."),
@@ -621,35 +621,36 @@ packaging for product orders; provided detailed follow-through and after sales s
 
                          h3(tags$strong(style="color:blue","Methodology :")),
                          h4("This project are separated 4 part of analysis from", tags$strong("data exploration, visualization, correlation and monthly return for data extraction by mathematical programming, portfolio optimization and machine learning"), "."),
-                         h4(tags$li(tags$strong("Data Exploration:"))),
-                         h5("1. To use ", tags$strong("Beautifulsoup"), "grap stocks symbol for S&P 500"),
-                         h5("2. To use API in the function of ", tags$strong("fix_yahoo_finance"), "to load all dataset for 500 stocks share from January 2008 until Now, each stocks symbol will be used to load their own CSV dataset file."),
-                         h5("3. To select each stocks of adjusted closing price and use the ", tags$strong("join"), "function and rename the columns to create the joined CSV."),
-                         h5("4. To use both ", tags$strong("plotly"), "and", tags$strong("matplotlib"),"for data visualization," , tags$strong("iplot"), "can be used to compare the detail price in certain period of time."),
-                         
-                         h4(tags$li(tags$strong("Higher monthly return:"))),
-                         h5("1. To use ", tags$strong("corr() function"), "to find out the top 30 stocks which are higher correlation with S&P 500 index from 500 stocks share."),
-                         h5("2. The Last part of this project will conduct the prediction of machine learning for S&P 500 index, so the correlation between stocks and index is important reference for the trend affected by index fluctuation."),
-                         h5("3. To calculate and compare the higher monthly return for this 30 stocks."),
-                         h5("4. To calculate the ", tags$strong("top 10 stocks of highest monthly return from the above 30"),"."),
-                         
-                         h4(tags$li(tags$strong("Portfolio Optimization:"))),
-                         h5("1. To use the portfolio optimization method to decide the investment strategic."),
-                         h5("2. To calculate the ", tags$strong("top 10 higher monthly return"),"of stocks share as Medium or long term investment."),
-                         h5("3. To calculate the ", tags$strong("top 10 higher monthly return"),"with lower risk as investment strategic."),
-                         
-                         h4(tags$li(tags$strong("Machine Learning:"))),
-                         h5("1. Moving average"),
-                         h5("2. Linear Regression"),
-                         h5(tags$li("Using the function of ", tags$strong("linear_model"),"in", tags$strong("sklearn"))),
-                         h5("3. k-Nearest Neighbours"),
-                         h5(tags$li("Using the function of ", tags$strong("neighbors, GridSearchCV, MinMaxScaler"),"in", tags$strong("sklearn"))),
-                         h5("4. Auto ARIMA"),
-                         h5(tags$li("Using the function of ", tags$strong("auto_arima"),"in", tags$strong("pmdarima"))),
-                         h5("5. Prophet"),
-                         h5(tags$li("Using the function of ", tags$strong("Prophet in fbprophet"),"which Prophet, designed by Facebook")),
-                         h5("6. Long Short Term Memory"),
-                         h5(tags$li("Using the function of ", tags$strong("MinMaxScaler in sklearn"),"and", tags$strong("LSTM in keras"))),
+                         tags$br(),
+                         h4(tags$strong("1. Data Exploration:")),
+                         h4(tags$li("To use ", tags$strong("Beautifulsoup"), "grap stocks symbol for S&P 500")),
+                         h4(tags$li("To use API in the function of ", tags$strong("fix_yahoo_finance"), "to load all dataset for 500 stocks share from January 2008 until Now, each stocks symbol will be used to load their own CSV dataset file.")),
+                         h4(tags$li("To select each stocks of adjusted closing price and use the ", tags$strong("join"), "function and rename the columns to create the joined CSV.")),
+                         h4(tags$li("To use both ", tags$strong("plotly"), "and", tags$strong("matplotlib"),"for data visualization," , tags$strong("iplot"), "can be used to compare the detail price in certain period of time.")),
+                         tags$br(),
+                         h4(tags$strong("2. Higher monthly return:")),
+                         h4(tags$li("To use ", tags$strong("corr() function"), "to find out the top 30 stocks which are higher correlation with S&P 500 index from 500 stocks share.")),
+                         h4(tags$li("The Last part of this project will conduct the prediction of machine learning for S&P 500 index, so the correlation between stocks and index is important reference for the trend affected by index fluctuation.")),
+                         h4(tags$li("To calculate and compare the higher monthly return for this 30 stocks.")),
+                         h4(tags$li("To calculate the ", tags$strong("top 10 stocks of highest monthly return from the above 30"),".")),
+                         tags$br(),
+                         h4(tags$strong("3. Portfolio Optimization:")),
+                         h4(tags$li("To use the portfolio optimization method to decide the investment strategic.")),
+                         h4(tags$li("To calculate the ", tags$strong("top 10 higher monthly return"),"of stocks share as Medium or long term investment.")),
+                         h4(tags$li("To calculate the ", tags$strong("top 10 higher monthly return"),"with lower risk as investment strategic.")),
+                         tags$br(),
+                         h4(tags$strong("4. Machine Learning:")),
+                         h4("1. Moving average"),
+                         h4("2. Linear Regression"),
+                         h4(tags$li("Using the function of ", tags$strong("linear_model"),"in", tags$strong("sklearn"))),
+                         h4("3. k-Nearest Neighbours"),
+                         h4(tags$li("Using the function of ", tags$strong("neighbors, GridSearchCV, MinMaxScaler"),"in", tags$strong("sklearn"))),
+                         h4("4. Auto ARIMA"),
+                         h4(tags$li("Using the function of ", tags$strong("auto_arima"),"in", tags$strong("pmdarima"))),
+                         h4("5. Prophet"),
+                         h4(tags$li("Using the function of ", tags$strong("Prophet in fbprophet"),"which Prophet, designed by Facebook")),
+                         h4("6. Long Short Term Memory"),
+                         h4(tags$li("Using the function of ", tags$strong("MinMaxScaler in sklearn"),"and", tags$strong("LSTM in keras"))),
                          
                         
                          
@@ -661,7 +662,8 @@ packaging for product orders; provided detailed follow-through and after sales s
             )
             
     )
-  )),
+  ,
+
   tabItem("workSample2",
           fluidRow(
             box(
@@ -669,11 +671,11 @@ packaging for product orders; provided detailed follow-through and after sales s
               status="primary", width=12, collapsible = FALSE,
               column(12, 
                      tags$div(
-                       h3(tags$strong(style="color:blue","Analysis Report Link :")),
-                       h4(tags$li(tags$strong(tags$a(href="https://rawcdn.githack.com/fung1091/Data698/master/final/finalreport1.html", "Report in HTML"))),
-                          h4(tags$li(tags$strong(tags$a(href="https://nbviewer.jupyter.org/github/fung1091/Data698/blob/master/final/finalreport.ipynb", "Report with Coding in Jupyter - Python")))),
-                          h4(tags$li(tags$strong(tags$a(href="https://rawcdn.githack.com/fung1091/Data698/master/final/finalreport_final.pdf", "PDF report"))),
-                             tags$br(),
+                       #h3(tags$strong(style="color:blue","Analysis Report Link :")),
+                       #h4(tags$li(tags$strong(tags$a(href="https://rawcdn.githack.com/fung1091/Data698/master/final/finalreport1.html", "Report in HTML"))),
+                        #  h4(tags$li(tags$strong(tags$a(href="https://nbviewer.jupyter.org/github/fung1091/Data698/blob/master/final/finalreport.ipynb", "Report with Coding in Jupyter - Python")))),
+                        #  h4(tags$li(tags$strong(tags$a(href="https://rawcdn.githack.com/fung1091/Data698/master/final/finalreport_final.pdf", "PDF report"))),
+                        #     tags$br(),
                              
                                     
                              h3(tags$strong(style="color:blue","Experiment & Result :")),
@@ -684,21 +686,49 @@ packaging for product orders; provided detailed follow-through and after sales s
                                 portfolio optimization in our data time series."),
                              imageOutput("myImage2"),
                              tags$br(),
+                             tags$br(),
+                             tags$br(),
+                             tags$br(),
                              
                              h4("2. Does it have strong relation with S&P 500 index fluctation when we invest some stocks?"),
                              h4("Most people think that they will get higher return when the main index going up, so we can calculate the
                                 correlation to check which stocks share are strong relationship and low relationship."),
                              imageOutput("myImage3"),
                              tags$br(),
+                             tags$br(),
+                             tags$br(),
+                             tags$br(),
+                             tags$br(),
+                             tags$br(),
                              
                              h4("3. To use corr() function to find out the top 30 stocks which are higher correlation with S&P 500 index from 500
                                 stocks share."),
                              imageOutput("myImage4"),
                              tags$br(),
+                             tags$br(),
+                             tags$br(),
+                             tags$br(),
+                             tags$br(),
                              
                              h4("5. To use lambda function to sort out the highest monthly return (top 10 from 30 stocks share which are higher correlation with S&P 500 index from 500
                                 stocks share."),
                              imageOutput("myImage5"),
+                             tags$br(),
+                             tags$br(),
+                             tags$br(),
+                             tags$br(),
+                             tags$br(),
+                             tags$br(),
+                             tags$br(),
+                             tags$br(),
+                             tags$br(),
+                             tags$br(),
+                             tags$br(),
+                             tags$br(),
+                             tags$br(),
+                             tags$br(),
+                             tags$br(),
+                             tags$br(),
                              h5("Until 2019-04-18, top 10 higher monthly return with higher correlation include Gartner Inc, Sherwin-Williams, 
                                 Home Depot, The Cooper Companies, Roper Technologies, SBA Communications, Moody's Corp, Amphenol Corp, Fidelity National Information Services
                                 Costco Wholesale Corp."), 
@@ -709,6 +739,10 @@ packaging for product orders; provided detailed follow-through and after sales s
                                 so allocating a large percentage to Costco for minimum risk portfolio makes sense."),
                              h4("If we are willing to take higher risk for higher return, one that gives us the best risk-adjusted return is the one with maximum Sharpe ratio."),
                              imageOutput("myImage6"),
+                             tags$br(),
+                             tags$br(),
+                             tags$br(),
+                             tags$br(),
                              tags$br(),
                              
                              h4("7. The stock with the least risk is COST at around 0.22, 
@@ -792,7 +826,7 @@ packaging for product orders; provided detailed follow-through and after sales s
               )
   ))
     
-)) 
+#)) 
 
 
 
@@ -1130,12 +1164,12 @@ server <- function(input, output) {
   }, deleteFile = FALSE)
   
   output$myImage1 <- renderImage({
-    list(src = "python1/top2.jpeg",
+    list(src = "python1/top4.jpg",
          #contentType = 'image/png',
          #width = '100%',
          #height = '100%',
-         width = '100%',
-         height = '100%',
+         width = 952,
+         height = 358,
          alt = "This is image alternate text")
   }, deleteFile = FALSE)
   
@@ -1144,8 +1178,8 @@ server <- function(input, output) {
          #contentType = 'image/png',
          #width = '100%',
          #height = '100%',
-         width = '100%',
-         height = '100%',
+         width = 800,
+         height = 479,
          alt = "This is image alternate text")
   }, deleteFile = FALSE)
   
@@ -1154,8 +1188,8 @@ server <- function(input, output) {
          #contentType = 'image/png',
          #width = '100%',
          #height = '100%',
-         width = '100%',
-         height = '100%',
+         width = 800,
+         height = 500,
          alt = "This is image alternate text")
   }, deleteFile = FALSE)
   
@@ -1164,8 +1198,8 @@ server <- function(input, output) {
          #contentType = 'image/png',
          #width = '100%',
          #height = '100%',
-         width = '100%',
-         height = '100%',
+         width = 800,
+         height = 500,
          alt = "This is image alternate text")
   }, deleteFile = FALSE)
   
@@ -1174,8 +1208,8 @@ server <- function(input, output) {
          #contentType = 'image/png',
          #width = '100%',
          #height = '100%',
-         width = '100%',
-         height = '100%',
+         width = 800,
+         height = 700,
          alt = "This is image alternate text")
   }, deleteFile = FALSE)
   
@@ -1184,8 +1218,8 @@ server <- function(input, output) {
          #contentType = 'image/png',
          #width = '100%',
          #height = '100%',
-         width = '100%',
-         height = '100%',
+         width = 800,
+         height = 500,
          alt = "This is image alternate text")
   }, deleteFile = FALSE)
   
@@ -1194,8 +1228,8 @@ server <- function(input, output) {
          #contentType = 'image/png',
          #width = '100%',
          #height = '100%',
-         width = 816,
-         height = 834,
+         width = 800,
+         height = 800,
          alt = "This is image alternate text")
   }, deleteFile = FALSE)
   
@@ -1204,8 +1238,8 @@ server <- function(input, output) {
          #contentType = 'image/png',
          #width = '100%',
          #height = '100%',
-         width = '100%',
-         height = '100%',
+         width = 800,
+         height = 350,
          alt = "This is image alternate text")
   }, deleteFile = FALSE)
   
@@ -1214,8 +1248,8 @@ server <- function(input, output) {
          #contentType = 'image/png',
          #width = '100%',
          #height = '100%',
-         width = '100%',
-         height = '100%',
+         width = 800,
+         height = 350,
          alt = "This is image alternate text")
   }, deleteFile = FALSE)
   
@@ -1224,8 +1258,8 @@ server <- function(input, output) {
          #contentType = 'image/png',
          #width = '100%',
          #height = '100%',
-         width = '100%',
-         height = '100%',
+         width = 800,
+         height = 350,
          alt = "This is image alternate text")
   }, deleteFile = FALSE)
   
@@ -1234,8 +1268,8 @@ server <- function(input, output) {
          #contentType = 'image/png',
          #width = '100%',
          #height = '100%',
-         width = '100%',
-         height = '100%',
+         width = 800,
+         height = 350,
          alt = "This is image alternate text")
   }, deleteFile = FALSE)
   
@@ -1244,8 +1278,8 @@ server <- function(input, output) {
          #contentType = 'image/png',
          #width = '100%',
          #height = '100%',
-         width = '100%',
-         height = '100%',
+         width = 800,
+         height = 350,
          alt = "This is image alternate text")
   }, deleteFile = FALSE)
   
@@ -1254,8 +1288,8 @@ server <- function(input, output) {
          #contentType = 'image/png',
          #width = '100%',
          #height = '100%',
-         width = '100%',
-         height = '100%',
+         width = 800,
+         height = 350,
          alt = "This is image alternate text")
   }, deleteFile = FALSE)
   
@@ -1264,8 +1298,8 @@ server <- function(input, output) {
          #contentType = 'image/png',
          #width = '100%',
          #height = '100%',
-         width = '100%',
-         height = '100%',
+         width = 375,
+         height = 267,
          alt = "This is image alternate text")
   }, deleteFile = FALSE)
   
