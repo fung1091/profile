@@ -73,11 +73,8 @@ body <- dashboardBody(
                 column(12, 
                        tags$div(
                          h2(tags$strong(style="color:black","Tze Fung Jim Lung")),
-                         imageOutput("myImage"),
-                         tags$br(),
-                         tags$br(),
-                         tags$br(),
-                         tags$br(),
+                         #imageOutput("myImage"),
+                         htmlOutput("myImage"),
                          tags$br(),
                          tags$span(   
                            h4(tags$strong(style="color:blue","Career Objective: ")),
@@ -602,7 +599,8 @@ packaging for product orders; provided detailed follow-through and after sales s
     ),
     
     tabItem("workSample1",
-            imageOutput("myImage1"),
+            #imageOutput("myImage1"),
+            htmlOutput("myImage1"),
             fluidRow(
               box(
                 title = h3("Topic: Portfolio optimization and Machine learning with visualization analysis for S&P 500 in Python"), solidHeader = TRUE,
@@ -684,134 +682,103 @@ packaging for product orders; provided detailed follow-through and after sales s
                              h4("We will further see the top 10
                                 monthly return, top 10 for higher correlation with S&P 500 index, and top 10 investing stocks strategic from the
                                 portfolio optimization in our data time series."),
-                             imageOutput("myImage2"),
+                             #imageOutput("myImage2"),
+                             htmlOutput("myImage2"),
                              tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
+                             
                              
                              h4("2. Does it have strong relation with S&P 500 index fluctation when we invest some stocks?"),
                              h4("Most people think that they will get higher return when the main index going up, so we can calculate the
                                 correlation to check which stocks share are strong relationship and low relationship."),
-                             imageOutput("myImage3"),
+                             #imageOutput("myImage3"),
+                             htmlOutput("myImage3"),
                              tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
+                             
                              
                              h4("3. To use corr() function to find out the top 30 stocks which are higher correlation with S&P 500 index from 500
                                 stocks share."),
-                             imageOutput("myImage4"),
+                             #imageOutput("myImage4"),
+                             htmlOutput("myImage4"),
                              tags$br(),
-                             tags$br(),
-                             tags$br(),
+                             
+                             
+                             h4("4. To use lambda function to sort out the highest monthly return (top 10 from 30 stocks share which are higher correlation with S&P 500 index from 500
+                                stocks share."),
+                             #imageOutput("myImage5"),
+                             htmlOutput("myImage5"),
                              tags$br(),
                              tags$br(),
                              
-                             h4("5. To use lambda function to sort out the highest monthly return (top 10 from 30 stocks share which are higher correlation with S&P 500 index from 500
-                                stocks share."),
-                             imageOutput("myImage5"),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
                              h5("Until 2019-04-18, top 10 higher monthly return with higher correlation include Gartner Inc, Sherwin-Williams, 
                                 Home Depot, The Cooper Companies, Roper Technologies, SBA Communications, Moody's Corp, Amphenol Corp, Fidelity National Information Services
                                 Costco Wholesale Corp."), 
                              tags$br(),
                              
-                             h4("6. For minimum risk portfolio, we can see around 30% of our budget is allocated to Costco. 
+                             h4("5. For minimum risk portfolio, we can see around 30% of our budget is allocated to Costco. 
                                 If you take another look at the daily return plot from earlier, the Costco is the least volatile among these stocks, 
                                 so allocating a large percentage to Costco for minimum risk portfolio makes sense."),
                              h4("If we are willing to take higher risk for higher return, one that gives us the best risk-adjusted return is the one with maximum Sharpe ratio."),
-                             imageOutput("myImage6"),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
+                             #imageOutput("myImage6"),
+                             htmlOutput("myImage6"),
                              tags$br(),
                              tags$br(),
                              
-                             h4("7. The stock with the least risk is COST at around 0.22, 
+                             h4("6. The stock with the least risk is COST at around 0.22, 
                                 but the return is only around 0.16. If we will to take slightly more risk around 0.225 return, 
                                 we should consider to choose HD and SHW rather than IT with higher risk with portfolio optimisation."),
-                             imageOutput("myImage7"),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
-                             tags$br(),
+                             #imageOutput("myImage7"),
+                             htmlOutput("myImage7"),
                              tags$br(),
                              tags$br(),
                              tags$br(),
                              
-                             h4(tags$strong("8. Machine Learning - Moving Average")),
+                             h4(tags$strong("7. Machine Learning - Moving Average")),
                              h4("The root mean square error is 556.7202, prediction is 2092.7282"),
-                             imageOutput("myImage8"),
+                             #imageOutput("myImage8"),
+                             htmlOutput("myImage8"),
                              h4("The RMSE value is close to 556.7202646158338 but the results are not very promising."),
                              tags$br(),
                              
-                             h4(tags$strong("9. Machine Learning - Linear Regression")),
+                             h4(tags$strong("8. Machine Learning - Linear Regression")),
                              h4("The root mean square error is 296.1361, prediction is 2525.14814"),
-                             imageOutput("myImage9"),
+                             #imageOutput("myImage9"),
+                             htmlOutput("myImage9"),
                              h4("The RMSE value is lower than the Moving Average, which clearly shows that linear regression has performed better."),
                              tags$br(),
                              
-                             h4(tags$strong("10. Machine Learning - k-Nearest Neighbours")),
+                             h4(tags$strong("9. Machine Learning - k-Nearest Neighbours")),
                              h4("The root mean square error is 1142.9905, prediction is 2266.327"),
-                             imageOutput("myImage10"),
+                             #imageOutput("myImage10"),
+                             htmlOutput("myImage10"),
                              h4("The RMSE value of KNN is higher than the linear regression model and the plot shows the same pattern."),
                              tags$br(),
                              
-                             h4(tags$strong("11. Machine Learning - Auto ARIMA")),
+                             h4(tags$strong("10. Machine Learning - Auto ARIMA")),
                              h4("The root mean square error is 149.4734, prediction is 3098.4159"),
-                             imageOutput("myImage11"),
+                             #imageOutput("myImage11"),
+                             htmlOutput("myImage11"),
                              h4("Although the predictions using this technique are far better than that of the previously implemented machine learning models, 
                             these predictions are still not close to the real values."),
                              tags$br(),
                              
-                             h4(tags$strong("12. Machine Learning - Prophet")),
+                             h4(tags$strong("11. Machine Learning - Prophet")),
                              h4("The root mean square error is 446.4384233932304, prediction is 2285.3302"),
-                             imageOutput("myImage12"),
+                             #imageOutput("myImage12"),
+                             htmlOutput("myImage12"),
                              h4("Forecasting techniques like ARIMA, SARIMA and Prophet would not show good results for this particular problem."),
                              tags$br(),
                              
-                             h4(tags$strong("13. Machine Learning - Long Short Term Memory (LSTM)")),
+                             h4(tags$strong("12. Machine Learning - Long Short Term Memory (LSTM)")),
                              h4("The root mean square error is 36.8895, prediction is 2899.4375"),
-                             imageOutput("myImage13"),
+                             #imageOutput("myImage13"),
+                             htmlOutput("myImage13"),
                              h4("The model seem to predict well with real data, but it is not enough to identify whether the stock price will increase or decrease. Stock price is affected by the news about the company and other factors like demonetization or merger/demerger of the companies."),
                              tags$br(),
                              
-                             h4(tags$strong("14. Model Comparsion")),
+                             h4(tags$strong("13. Model Comparsion")),
                              h4("The S&P 500 index is 2905.030029 on 2019-04-18"),
-                             imageOutput("myImage14"),
+                             #imageOutput("myImage14"),
+                             htmlOutput("myImage14"),
                              h4("To compare with the root mean square of error, the most lowest rmse of model is by using of Long Short Term Memory method, and the prediction value is 2899.4375 As we mentioned as last part, 
                             we should also consider the news about the company and other factors like demonetization or merger/demerger of the companies."),
                              tags$br(),
@@ -1153,155 +1120,260 @@ server <- function(input, output) {
   #////////////////////////////////////////////////////////////////////////////////
   # /fung1091/Data698/blob/master/output_85_3.png
   
-  output$myImage <- renderImage({
-    list(src = "me.JPG",
-         #contentType = 'image/png',
-         #width = '100%',
-         #height = '100%',
-         width = 500,
-         height = 499,
-         alt = "This is image alternate text")
-  }, deleteFile = FALSE)
+  #output$myImage <- renderImage({
+  #  list(src = "me.JPG",
+  #       #contentType = 'image/png',
+  #       #width = '100%',
+  #       #height = '100%',
+  #       width = 500,
+  #       height = 499,
+  #       alt = "This is image alternate text")
+  #}, deleteFile = FALSE)
   
-  output$myImage1 <- renderImage({
-    list(src = "python1/top4.jpg",
-         #contentType = 'image/png',
-         #width = '100%',
-         #height = '100%',
-         width = 952,
-         height = 358,
-         alt = "This is image alternate text")
-  }, deleteFile = FALSE)
+  output$myImage <- renderText({
+    c('<img src=',
+      "https://raw.github.com/fung1091/profile/master/me.JPG" ,
+      ' width = "500" height = "499"',
+      '>')
+  })
   
-  output$myImage2 <- renderImage({
-    list(src = "python1/3_visualization_time_series.png",
-         #contentType = 'image/png',
-         #width = '100%',
-         #height = '100%',
-         width = 800,
-         height = 479,
-         alt = "This is image alternate text")
-  }, deleteFile = FALSE)
+  #output$myImage1 <- renderImage({
+  #  list(src = "python1/top4.jpg",
+  #       #contentType = 'image/png',
+  #       #width = '100%',
+  #       #height = '100%',
+  #       width = 952,
+  #       height = 358,
+  #       alt = "This is image alternate text")
+  #}, deleteFile = FALSE)
   
-  output$myImage3 <- renderImage({
-    list(src = "python1/4_correlation_500.png",
-         #contentType = 'image/png',
-         #width = '100%',
-         #height = '100%',
-         width = 800,
-         height = 500,
-         alt = "This is image alternate text")
-  }, deleteFile = FALSE)
+  output$myImage1 <- renderText({
+    c('<img src=',
+      "https://raw.github.com/fung1091/profile/master/python1/top4.jpg" ,
+      ' width = "952" height = "358"',
+      '>')
+  })
   
-  output$myImage4 <- renderImage({
-    list(src = "python1/5_correlation_30top.png",
-         #contentType = 'image/png',
-         #width = '100%',
-         #height = '100%',
-         width = 800,
-         height = 500,
-         alt = "This is image alternate text")
-  }, deleteFile = FALSE)
+  #output$myImage2 <- renderImage({
+  #  list(src = "python1/3_visualization_time_series.png",
+  #       #contentType = 'image/png',
+  #       #width = '100%',
+  #       #height = '100%',
+  #       width = 800,
+  #       height = 479,
+  #       alt = "This is image alternate text")
+  #}, deleteFile = FALSE)
   
-  output$myImage5 <- renderImage({
-    list(src = "python1/7_top10_highMonthlyReturn.png",
-         #contentType = 'image/png',
-         #width = '100%',
-         #height = '100%',
-         width = 800,
-         height = 700,
-         alt = "This is image alternate text")
-  }, deleteFile = FALSE)
+  output$myImage2 <- renderText({
+    c('<img src=',
+      "https://raw.github.com/fung1091/profile/master/python1/3_visualization_time_series.png" ,
+      ' width = "800" height = "479"',
+      '>')
+  })
   
-  output$myImage6 <- renderImage({
-    list(src = "python1/8_portfolio_allocation.png",
-         #contentType = 'image/png',
-         #width = '100%',
-         #height = '100%',
-         width = 800,
-         height = 500,
-         alt = "This is image alternate text")
-  }, deleteFile = FALSE)
+  #output$myImage3 <- renderImage({
+  #  list(src = "python1/4_correlation_500.png",
+  #       #contentType = 'image/png',
+  #       #width = '100%',
+  #       #height = '100%',
+  #       width = 800,
+  #       height = 500,
+  #       alt = "This is image alternate text")
+  #}, deleteFile = FALSE)
   
-  output$myImage7 <- renderImage({
-    list(src = "python1/9_portfolio_optimization.png",
-         #contentType = 'image/png',
-         #width = '100%',
-         #height = '100%',
-         width = 800,
-         height = 800,
-         alt = "This is image alternate text")
-  }, deleteFile = FALSE)
+  output$myImage3 <- renderText({
+    c('<img src=',
+      "https://raw.github.com/fung1091/profile/master/python1/4_correlation_500.png" ,
+      ' width = "800" height = "500"',
+      '>')
+  })
   
-  output$myImage8 <- renderImage({
-    list(src = "python1/10_moving_average.png",
-         #contentType = 'image/png',
-         #width = '100%',
-         #height = '100%',
-         width = 800,
-         height = 350,
-         alt = "This is image alternate text")
-  }, deleteFile = FALSE)
+  #output$myImage4 <- renderImage({
+  #  list(src = "python1/5_correlation_30top.png",
+  #       #contentType = 'image/png',
+  #       #width = '100%',
+  #       #height = '100%',
+  #       width = 800,
+  #       height = 500,
+  #       alt = "This is image alternate text")
+  #}, deleteFile = FALSE)
   
-  output$myImage9 <- renderImage({
-    list(src = "python1/11_linear_regression.png",
-         #contentType = 'image/png',
-         #width = '100%',
-         #height = '100%',
-         width = 800,
-         height = 350,
-         alt = "This is image alternate text")
-  }, deleteFile = FALSE)
+  output$myImage4 <- renderText({
+    c('<img src=',
+      "https://raw.github.com/fung1091/profile/master/python1/5_correlation_30top.png" ,
+      ' width = "800" height = "500"',
+      '>')
+  })
   
-  output$myImage10 <- renderImage({
-    list(src = "python1/12_KNN.png",
-         #contentType = 'image/png',
-         #width = '100%',
-         #height = '100%',
-         width = 800,
-         height = 350,
-         alt = "This is image alternate text")
-  }, deleteFile = FALSE)
+  #output$myImage5 <- renderImage({
+  #  list(src = "python1/7_top10_highMonthlyReturn.png",
+  #       #contentType = 'image/png',
+  #       #width = '100%',
+  #       #height = '100%',
+  #       width = 800,
+  #       height = 700,
+  #       alt = "This is image alternate text")
+  #}, deleteFile = FALSE)
   
-  output$myImage11 <- renderImage({
-    list(src = "python1/13_ARIMA.png",
-         #contentType = 'image/png',
-         #width = '100%',
-         #height = '100%',
-         width = 800,
-         height = 350,
-         alt = "This is image alternate text")
-  }, deleteFile = FALSE)
+  output$myImage5 <- renderText({
+    c('<img src=',
+      "https://raw.github.com/fung1091/profile/master/python1/7_top10_highMonthlyReturn.png" ,
+      ' width = "800" height = "700"',
+      '>')
+  })
   
-  output$myImage12 <- renderImage({
-    list(src = "python1/14_Prophet.png",
-         #contentType = 'image/png',
-         #width = '100%',
-         #height = '100%',
-         width = 800,
-         height = 350,
-         alt = "This is image alternate text")
-  }, deleteFile = FALSE)
+  #output$myImage6 <- renderImage({
+  #  list(src = "python1/8_portfolio_allocation.png",
+  #       #contentType = 'image/png',
+  #       #width = '100%',
+  #       #height = '100%',
+  #       width = 800,
+  #       height = 500,
+  #       alt = "This is image alternate text")
+  #}, deleteFile = FALSE)
   
-  output$myImage13 <- renderImage({
-    list(src = "python1/15_LSTM.png",
-         #contentType = 'image/png',
-         #width = '100%',
-         #height = '100%',
-         width = 800,
-         height = 350,
-         alt = "This is image alternate text")
-  }, deleteFile = FALSE)
+  output$myImage6 <- renderText({
+    c('<img src=',
+      "https://raw.github.com/fung1091/profile/master/python1/8_portfolio_allocation.png" ,
+      ' width = "800" height = "500"',
+      '>')
+  })
   
-  output$myImage14 <- renderImage({
-    list(src = "python1/16_prediction.png",
-         #contentType = 'image/png',
-         #width = '100%',
-         #height = '100%',
-         width = 375,
-         height = 267,
-         alt = "This is image alternate text")
-  }, deleteFile = FALSE)
+  #output$myImage7 <- renderImage({
+  #  list(src = "python1/9_portfolio_optimization.png",
+  #       #contentType = 'image/png',
+  #       #width = '100%',
+  #       #height = '100%',
+  #       width = 800,
+  #       height = 800,
+  #       alt = "This is image alternate text")
+  #}, deleteFile = FALSE)
+  
+  output$myImage7 <- renderText({
+    c('<img src=',
+      "https://raw.github.com/fung1091/profile/master/python1/9_portfolio_optimization.png" ,
+      ' width = "800" height = "800"',
+      '>')
+  })
+  
+  #output$myImage8 <- renderImage({
+  #  list(src = "python1/10_moving_average.png",
+  #       #contentType = 'image/png',
+  #       #width = '100%',
+  #       #height = '100%',
+  #       width = 800,
+  #       height = 350,
+  #       alt = "This is image alternate text")
+  #}, deleteFile = FALSE)
+  
+  output$myImage8 <- renderText({
+    c('<img src=',
+      "https://raw.github.com/fung1091/profile/master/python1/10_moving_average.png" ,
+      ' width = "800" height = "350"',
+      '>')
+  })
+  
+  #output$myImage9 <- renderImage({
+  #  list(src = "python1/11_linear_regression.png",
+  #       #contentType = 'image/png',
+  #       #width = '100%',
+  #       #height = '100%',
+  #       width = 800,
+  #       height = 350,
+  #       alt = "This is image alternate text")
+  #}, deleteFile = FALSE)
+  
+  output$myImage9 <- renderText({
+    c('<img src=',
+      "https://raw.github.com/fung1091/profile/master/python1/11_linear_regression.png" ,
+      ' width = "800" height = "350"',
+      '>')
+  })
+  
+  #output$myImage10 <- renderImage({
+  #  list(src = "python1/12_KNN.png",
+  #       #contentType = 'image/png',
+  #       #width = '100%',
+  #       #height = '100%',
+  #       width = 800,
+  #       height = 350,
+  #       alt = "This is image alternate text")
+  #}, deleteFile = FALSE)
+  
+  output$myImage10 <- renderText({
+    c('<img src=',
+      "https://raw.github.com/fung1091/profile/master/python1/12_KNN.png" ,
+      ' width = "800" height = "350"',
+      '>')
+  })
+  
+  #output$myImage11 <- renderImage({
+  #  list(src = "python1/13_ARIMA.png",
+  #       #contentType = 'image/png',
+  #       #width = '100%',
+  #       #height = '100%',
+  #       width = 800,
+  #       height = 350,
+  #       alt = "This is image alternate text")
+  #}, deleteFile = FALSE)
+  
+  output$myImage11 <- renderText({
+    c('<img src=',
+      "https://raw.github.com/fung1091/profile/master/python1/13_ARIMA.png" ,
+      ' width = "800" height = "350"',
+      '>')
+  })
+  
+  #output$myImage12 <- renderImage({
+  #  list(src = "python1/14_Prophet.png",
+  #       #contentType = 'image/png',
+  #       #width = '100%',
+  #       #height = '100%',
+  #       width = 800,
+  #       height = 350,
+  #       alt = "This is image alternate text")
+  #}, deleteFile = FALSE)
+  
+  output$myImage12 <- renderText({
+    c('<img src=',
+      "https://raw.github.com/fung1091/profile/master/python1/14_Prophet.png" ,
+      ' width = "800" height = "350"',
+      '>')
+  })
+  
+  #output$myImage13 <- renderImage({
+  #  list(src = "python1/15_LSTM.png",
+  #       #contentType = 'image/png',
+  #       #width = '100%',
+  #       #height = '100%',
+  #       width = 800,
+  #       height = 350,
+  #       alt = "This is image alternate text")
+  #}, deleteFile = FALSE)
+  
+  output$myImage13 <- renderText({
+    c('<img src=',
+      "https://raw.github.com/fung1091/profile/master/python1/15_LSTM.png" ,
+      ' width = "800" height = "350"',
+      '>')
+  })
+  
+  #output$myImage14 <- renderImage({
+  #  list(src = "python1/16_prediction.png",
+  #       #contentType = 'image/png',
+  #       #width = '100%',
+  #       #height = '100%',
+  #       width = 375,
+  #       height = 267,
+  #       alt = "This is image alternate text")
+  #}, deleteFile = FALSE)
+  
+  output$myImage14 <- renderText({
+    c('<img src=',
+      "https://raw.github.com/fung1091/profile/master/python1/16_prediction.png" ,
+      ' width = "375" height = "267"',
+      '>')
+  })
   
 }
 
