@@ -102,15 +102,18 @@ Mathematics and statistics programming.")),
                            tags$br(),
                             
                            h4(tags$strong(style="color:blue","Experience :")),
+                           
+                           h4(tags$strong("Freelance Data Analyst - Various clients (May. 2019 - Now)")),
+                           h4(tags$li("Provided complex and intensive data analysis related to data scraping, visualization, mining, and Excel formation and Pivot
+                                      table")),
+                           
                            h4(tags$strong("Intern - Kasisto, New York, NY (Jan. 2019 - Apr. 2019)")),
                            h4(tags$li("Be responsible for the data sourcing pipeline and improve the natural language in chatbot")),
                            h4(tags$li("Develop and support of a wide range of data transformations and migrations")),
                            h4(tags$li("Construct custom ETL processes ")),
                            
-                           h4(tags$strong("Freelance Data Analyst - Various clients (Jul. 2018 - Dec. 2018)")),
-                           h4(tags$li("Provided complex and intensive data analysis related to data scraping, visualization, mining, and Excel formation and Pivot
-table")),
-                           h4(tags$strong("Co-Founder - Newinsock.com, New York, NY (Jan. 2017 - Jun. 2018)")),
+                           
+                           h4(tags$strong("Co-Founder - Newinsock.com, New York, NY (Jan. 2017 - Dec. 2018)")),
                            h4(tags$li("Conducted sourcing for products to ensure constant and timely supply of inventory; coordinated shipping and professional
 packaging for product orders; provided detailed follow-through and after sales service for customer satisfaction")),
                            h4(tags$li("Designed comprehensive web pages for business using Wordpress and SEO setting")),
