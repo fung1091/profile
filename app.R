@@ -4,6 +4,7 @@
 ################################
 
 #
+library(rsconnect)
 library(stringi)
 library(dplyr)
 library(ggplot2)
@@ -97,17 +98,34 @@ Mathematics and statistics programming.")),
                            tags$br(),
                            
                            h4(tags$strong(style="color:blue","Education :")),
-                           h4(tags$li("Master Degree of Data Science at City University of New York (CUNY) (April 2019, GPA: 3.9)")),
-                           h4(tags$li("BEng in Manufacturing Informatics and Systems Engineering from City University of Hong Kong (May 2005)")),
+                           h4(tags$li("Master Degree of Data Science at City University of New York (CUNY) (GPA: 3.9)")),
+                           h4(tags$li("BEng in Manufacturing Informatics and Systems Engineering from City University of Hong Kong")),
                            tags$br(),
                             
                            h4(tags$strong(style="color:blue","Experience :")),
                            
-                           h4(tags$strong("Freelance Data Analyst - Various clients (May. 2019 - Now)")),
-                           h4(tags$li("Provided complex and intensive data analysis related to data scraping, visualization, mining, and Excel formation and Pivot
-                                      table")),
+                           h4(tags$strong("Sales Operations Specialist (Data Reporting) - Centers Plan for Healthy Living (Dec. 2019 - Now)")),
+                           h4(tags$li("Conducted Data Reporting analysis to generate daily, weekly and monthly visualization report by using Google data studio, Github, Python, SQL, Tableau")),
+                           h4(tags$li("Analyzing and reporting sales enrollment data and build visualization report")),
+                           h4(tags$li("Reporting analysis for the changes and trends to sales plans")),
+                           h4(tags$li("Analyzing data for dis-enrollment survey and reason")),
+                           h4(tags$li("Providing analysis about competitors from CMS Gov data")),
+                           h4(tags$li("Analyzing Medicare product - DSNP, MAPD, MAP and Strategic planning")),
+                           h4(tags$li("Responsible for running Monthly commissions reporting to Finance team")),
+                           h4(tags$li("Maintain quota and other target files for performance analysis and compensation")),
+                           h4(tags$li("Python, SQL, Advanced excel to do the Commission calculations and processing, Monitor and track enrollments and disenrollments, Maintain and tracking marketing material inventory and orders")),
+                           h4(tags$li(tags$a(href="https://datastudio.google.com/u/0/reporting/5238bd99-da45-4c09-a3de-d5d0964ca0f4/page/1M", "Work Sample 1"))),
+                           h4(tags$li(tags$a(href="https://datastudio.google.com/u/0/reporting/8564305c-8c53-4005-8b06-0ac41fc8dbc0/page/tUc1B", "Work Sample 2"))),
+                           h4(tags$li(tags$a(href="https://datastudio.google.com/u/0/reporting/1ec04930-90d6-42dd-a549-69eb8ca0f259/page/4YOwB", "Work Sample 3"))),
                            
-                           h4(tags$strong("Intern - Kasisto, New York, NY (Jan. 2019 - Apr. 2019)")),
+                           
+                           h4(tags$strong("Data Analyst - OnKin Consultant (Jul. 2019 - Nov. 2020)")),
+                           h4(tags$li("Work as Data Visualization modeler to leadership and market teams on strategic, organizational, and operational projects designed to increase revenue, sales productivity, and operational efficiency")),
+                           h4(tags$li("Evaluate ongoing business performance to support day-to-day operations")),
+                           h4(tags$li("Build new dashboards on specific sales KPIs. Collaborate with the business operations team to audit and enhance sales specific Tableau and R Shiny dashboards")),
+                           h4(tags$li("Use a wide variety of analysis tools such as spreadsheets, comparisons, visualizations, R, Python, Jupyter and SQL")),
+                           
+                           h4(tags$strong("Intern (Data Team) - Kasisto, New York, NY (Jan. 2019 - Apr. 2019)")),
                            h4(tags$li("Be responsible for the data sourcing pipeline and improve the natural language in chatbot")),
                            h4(tags$li("Develop and support of a wide range of data transformations and migrations")),
                            h4(tags$li("Construct custom ETL processes ")),
